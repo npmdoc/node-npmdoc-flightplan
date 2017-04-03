@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"flightplan",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "flightplan",
+    "description": "api documentation for [flightplan (v0.6.15)](https://github.com/pstadler/flightplan) [![npm package](https://img.shields.io/npm/v/npmdoc-flightplan.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-flightplan) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-flightplan.svg)](https://travis-ci.org/npmdoc/node-npmdoc-flightplan)",
     "devDependencies": {
-        "flightplan": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "flightplan": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-flightplan",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-flightplan",
+    "keywords": [
+        "documentation",
+        "flightplan"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_flightplan.js",
+    "name": "npmdoc-flightplan",
+    "nameAlias": "npmdoc_flightplan",
+    "nameOriginal": "npmdoc-flightplan",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-flightplan.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
