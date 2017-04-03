@@ -1,0 +1,302 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/pstadler/flightplan"
+
+    >flightplan (v0.6.15)</a>
+</h1>
+<h4>Library for streamlining application deployment or systems administration tasks</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.flightplan">module flightplan</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">flightplan.</span>_flights</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">flightplan.</span>_targets</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">flightplan.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">flightplan.</span>runtime</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.flightplan.errors">module flightplan.errors</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.flightplan.errors.AbortedError">
+            function <span class="apidocSignatureSpan">flightplan.errors.</span>AbortedError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.flightplan.errors.BaseError">
+            function <span class="apidocSignatureSpan">flightplan.errors.</span>BaseError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.flightplan.errors.CommandExitedAbnormallyError">
+            function <span class="apidocSignatureSpan">flightplan.errors.</span>CommandExitedAbnormallyError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.flightplan.errors.ConnectionFailedError">
+            function <span class="apidocSignatureSpan">flightplan.errors.</span>ConnectionFailedError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.flightplan.errors.InvalidArgumentError">
+            function <span class="apidocSignatureSpan">flightplan.errors.</span>InvalidArgumentError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.flightplan.errors.InvalidTargetError">
+            function <span class="apidocSignatureSpan">flightplan.errors.</span>InvalidTargetError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.flightplan.errors.ProcessInterruptedError">
+            function <span class="apidocSignatureSpan">flightplan.errors.</span>ProcessInterruptedError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.flightplan" id="apidoc.module.flightplan">module flightplan</a></h1>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.flightplan.errors" id="apidoc.module.flightplan.errors">module flightplan.errors</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.flightplan.errors.AbortedError" id="apidoc.element.flightplan.errors.AbortedError">
+        function <span class="apidocSignatureSpan">flightplan.errors.</span>AbortedError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function AbortedError(message) {
+  AbortedError.super_.call(this, message);
+  Error.captureStackTrace(this, this.constructor);
+  this.name = this.constructor.name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.flightplan.errors.BaseError" id="apidoc.element.flightplan.errors.BaseError">
+        function <span class="apidocSignatureSpan">flightplan.errors.</span>BaseError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BaseError(message) {
+  BaseError.super_.call(this, message);
+  Error.captureStackTrace(this, this.constructor);
+  this.message = message;
+  this.name = this.constructor.name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.flightplan.errors.CommandExitedAbnormallyError" id="apidoc.element.flightplan.errors.CommandExitedAbnormallyError">
+        function <span class="apidocSignatureSpan">flightplan.errors.</span>CommandExitedAbnormallyError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CommandExitedAbnormallyError(message) {
+  CommandExitedAbnormallyError.super_.call(this, message);
+  Error.captureStackTrace(this, this.constructor);
+  this.name = this.constructor.name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.flightplan.errors.ConnectionFailedError" id="apidoc.element.flightplan.errors.ConnectionFailedError">
+        function <span class="apidocSignatureSpan">flightplan.errors.</span>ConnectionFailedError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ConnectionFailedError(message) {
+  ConnectionFailedError.super_.call(this, message);
+  Error.captureStackTrace(this, this.constructor);
+  this.name = this.constructor.name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.flightplan.errors.InvalidArgumentError" id="apidoc.element.flightplan.errors.InvalidArgumentError">
+        function <span class="apidocSignatureSpan">flightplan.errors.</span>InvalidArgumentError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function InvalidArgumentError(message) {
+  InvalidArgumentError.super_.call(this, message);
+  Error.captureStackTrace(this, this.constructor);
+  this.name = this.constructor.name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.flightplan.errors.InvalidTargetError" id="apidoc.element.flightplan.errors.InvalidTargetError">
+        function <span class="apidocSignatureSpan">flightplan.errors.</span>InvalidTargetError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function InvalidTargetError(message) {
+  InvalidTargetError.super_.call(this, message);
+  Error.captureStackTrace(this, this.constructor);
+  this.name = this.constructor.name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.flightplan.errors.ProcessInterruptedError" id="apidoc.element.flightplan.errors.ProcessInterruptedError">
+        function <span class="apidocSignatureSpan">flightplan.errors.</span>ProcessInterruptedError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ProcessInterruptedError(message) {
+  ProcessInterruptedError.super_.call(this, message);
+  Error.captureStackTrace(this, this.constructor);
+  this.name = this.constructor.name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
