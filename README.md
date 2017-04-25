@@ -1,7 +1,12 @@
-# api documentation for  [flightplan (v0.6.15)](https://github.com/pstadler/flightplan)  [![npm package](https://img.shields.io/npm/v/npmdoc-flightplan.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-flightplan) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-flightplan.svg)](https://travis-ci.org/npmdoc/node-npmdoc-flightplan)
+# npmdoc-flightplan
+
+#### basic api documentation for  [flightplan (v0.6.15)](https://github.com/pstadler/flightplan)  [![npm package](https://img.shields.io/npm/v/npmdoc-flightplan.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-flightplan) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-flightplan.svg)](https://travis-ci.org/npmdoc/node-npmdoc-flightplan)
+
 #### Library for streamlining application deployment or systems administration tasks
 
 [![NPM](https://nodei.co/npm/flightplan.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/flightplan)
+
+- [https://npmdoc.github.io/node-npmdoc-flightplan/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-flightplan/build/apidoc.html)
 
 [![apidoc](https://npmdoc.github.io/node-npmdoc-flightplan/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-flightplan/build/apidoc.html)
 
@@ -101,19 +106,6 @@
     "version": "0.6.15"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module flightplan](#apidoc.module.flightplan)
-1.  object <span class="apidocSignatureSpan">flightplan.</span>_flights
-1.  object <span class="apidocSignatureSpan">flightplan.</span>_targets
-1.  object <span class="apidocSignatureSpan">flightplan.</span>runtime
-
-
-
-# <a name="apidoc.module.flightplan"></a>[module flightplan](#apidoc.module.flightplan)
 
 
 
